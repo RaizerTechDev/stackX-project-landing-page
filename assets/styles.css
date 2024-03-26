@@ -1,0 +1,266 @@
+/* Estilos gerais */
+
+body {
+  font-family: "DM Sans", sans-serif; /* Define a família de fontes */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para a navegação */
+
+.nav--item {
+  margin-left: 10px; /* espaçamento entre os itens do menu */
+}
+
+.nav--link {
+  color: #3b3;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+.navbar__logo {
+  margin-left: -50px;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-left: 15px;
+  color: rgb(2, 8, 28);
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+/* Estilo para o cabeçalho (hero) */
+.hero {
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGRzYTlvd2VpaWttZmRoMDJhOWNuMDRneDVodXVwbWh3YjU1ZnR0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iGpHt2H22k1orjgT9b/giphy.gif");
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.hero__title {
+  color: #3b3;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.hero__subtitle {
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  font-size: 19px;
+}
+
+.hero a:hover {
+  color: #80e93f; /* Define a cor do texto quando houver foco como #80e93f; */
+}
+
+/* Estilos para a seção de benefícios */
+
+#benefits {
+  background: url("./images/gray-light.jpg") no-repeat; /* Define uma imagem de fundo para seção*/
+  margin-top: 20px;
+}
+
+#benefits h2 {
+  color: #3b3;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  font-size: 40px;
+}
+
+#benefits h3 {
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  font-size: 19px;
+}
+
+#benefits .card {
+  border: none;
+  background-image: url(../assets/images/gray-light.jpg); /* Define uma imagem de fundo para seção*/
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+/* Estilos para os ícones de recursos */
+
+#features h2 {
+  color: #3b3;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  font-size: 40px;
+}
+
+#features h3,
+p {
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+.feature--icon {
+  background-color: #e3e4e6;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para a seção de depoimentos */
+
+#testimonials {
+  background-image: url(../assets/images/gray-light.jpg); /* Define uma imagem de fundo para seção*/
+}
+
+#testimonials .testimonial {
+  text-align: center;
+}
+
+#testimonials h2 {
+  color: #3b3;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  font-size: 40px;
+}
+
+#testimonials p,
+h4 {
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+#testimonials img {
+  margin-bottom: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer__title {
+  color: #c6c4c4;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer__subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #3b3;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+.footer--copyrght {
+  color: #c6c4c4;
+}
+
+/* Estilos para os ícones de redes sociais */
+.social-icons {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #ee90cd;
+  transition: color 0.3s ease;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  /* Estilos para a navegação */
+  .navbar__logo {
+    margin-left: 10px;
+    width: 35px;
+  }
+
+  .navbar {
+    padding: 10px 0;
+    font-size: 19px;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+    margin-left: 2px;
+  }
+
+  /* Estilo para o cabeçalho (hero) */
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero__subtitle {
+    font-size: 19px;
+  }
+
+  /* Estilos para a seção de benefícios */
+  #benefits h3 {
+    font-size: 32px;
+  }
+
+  #benefits p {
+    font-size: 22px;
+  }
+
+  /* Estilos para os ícones de recursos */
+  #features h3 {
+    font-size: 32px;
+  }
+
+  #features p {
+    font-size: 22px;
+  }
+
+  /* Estilos para a seção de depoimentos */
+  #testimonials p {
+    font-size: 22px;
+  }
+
+  /* Estilos para o rodapé */
+  .footer__title {
+    font-size: 25px;
+  }
+
+  .footer__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-top: 30px; /* Adiciona espaçamento superior */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+  }
+
+  .footer__social-icons {
+    margin-bottom: 20px;
+  }
+
+  .social-icons__link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #ee90cd;
+    transition: color 0.3s ease;
+  }
+
+  .social-icons__link:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+  }
+
+  .footer__copyright {
+    font-size: 1.2rem;
+  }
+}
