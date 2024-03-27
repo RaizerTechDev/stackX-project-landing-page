@@ -12,6 +12,11 @@ body {
 
 /* Estilos para a navegação */
 
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
 .nav--item {
   margin-left: 10px; /* espaçamento entre os itens do menu */
 }
@@ -38,6 +43,7 @@ body {
   background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGRzYTlvd2VpaWttZmRoMDJhOWNuMDRneDVodXVwbWh3YjU1ZnR0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iGpHt2H22k1orjgT9b/giphy.gif");
   background-size: cover;
   padding: 100px 0;
+  text-align: center;
 }
 
 .hero__title {
@@ -46,6 +52,7 @@ body {
   text-decoration: underline;
   font-style: italic;
   font-size: 40px;
+  margin-top: 70px;
 }
 
 .hero__subtitle {
@@ -188,9 +195,14 @@ footer {
     width: 35px;
   }
 
-  .navbar {
+  .navbar { 
     padding: 10px 0;
-    font-size: 19px;
+    font-size: 16px;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+    flex-direction: row; /* Organiza os itens do menu em linha */
   }
 
   .company-name {
@@ -200,7 +212,11 @@ footer {
 
   /* Estilo para o cabeçalho (hero) */
   .hero {
-    padding: 50px 0;
+    padding: 50px 0;   
+  }
+
+  .hero__title {
+   margin-top: 120px;
   }
 
   .hero__subtitle {
