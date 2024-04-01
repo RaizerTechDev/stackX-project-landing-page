@@ -15,6 +15,7 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
+  z-index: 1; /* Z-index ainda maior para a barra de navegação */
 }
 
 .nav--item {
@@ -44,6 +45,7 @@ body {
   background-size: cover;
   padding: 100px 0;
   text-align: center;
+  position: relative; /* Adicionado position relative */
 }
 
 .hero__title {
@@ -67,7 +69,6 @@ body {
 }
 
 /* Estilos para a seção de benefícios */
-
 #benefits {
   background: url("./images/gray-light.jpg") no-repeat; /* Define uma imagem de fundo para seção*/
   margin-top: 20px;
@@ -195,7 +196,7 @@ footer {
     width: 35px;
   }
 
-  .navbar { 
+  .navbar {
     padding: 10px 0;
     font-size: 16px;
   }
@@ -205,18 +206,22 @@ footer {
     flex-direction: row; /* Organiza os itens do menu em linha */
   }
 
+  .nav--item {
+    margin-left: 8px; /* espaçamento entre os itens do menu */
+  }
+
   .company-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 2px;
   }
 
   /* Estilo para o cabeçalho (hero) */
   .hero {
-    padding: 50px 0;   
+    padding: 50px 0;
   }
 
   .hero__title {
-   margin-top: 120px;
+    margin-top: 120px;
   }
 
   .hero__subtitle {
